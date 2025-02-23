@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewable Energy Microgrid Simulator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <h1>Renewable Energy Microgrid Simulator</h1>
+    <div class="container">
+        <!-- Energy Generation Section -->
+        <div class="card">
+            <h2>Energy Generation</h2>
+            <p>Solar: <span id="solar">--</span> kW</p>
+            <p>Wind: <span id="wind">--</span> kW</p>
+            <p>Tidal: <span id="tidal">--</span> kW</p>
+        </div>
+
+        <!-- Energy Consumption Section -->
+        <div class="card">
+            <h2>Energy Consumption</h2>
+            <p>Port Usage: <span id="consumption">--</span> kW</p>
+            <p>Supplied by Renewables: <span id="renewable-supply">--</span> kW</p>
+        </div>
+
+        <!-- Battery Storage Section -->
+        <div class="card">
+            <h2>Battery Storage</h2>
+            <p>Current Storage: <span id="battery">--</span> kWh</p>
+            <p>Storage Capacity: 1000 kWh</p>
+        </div>
+
+        <!-- Carbon Savings Section -->
+        <div class="card">
+            <h2>Carbon Savings</h2>
+            <p>CO₂ Reduction: <span id="co2-savings">--</span> kg</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
