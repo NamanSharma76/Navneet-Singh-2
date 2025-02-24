@@ -6,6 +6,7 @@ function generateEnergyData() {
     return { solar, wind, tidal };
 }
 
+
 // Function to update the dashboard
 function updateDashboard() {
     const data = generateEnergyData();
@@ -30,8 +31,10 @@ function updateDashboard() {
     document.getElementById('co2-savings').textContent = co2Savings;
 }
 
+
 // Update the dashboard every 2 seconds
 setInterval(updateDashboard, 2000);
+
 
 // Initialize the dashboard
 updateDashboard();
